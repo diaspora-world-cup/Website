@@ -1,0 +1,229 @@
+* {
+	box-sizing: border-box;
+}
+
+/* ---------------------------- Big Screen: Start ---------------------------- */
+@media only screen and (min-width: 1250px) {
+	div.soccerPlayers {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.soccerPlayers h1 {
+		margin: 20px 0px;
+		text-align: center;
+		font-size: 70px;
+	}
+	div.soccerPlayers p {
+		text-align: center;
+		font-size: 20px;
+	}
+	div.soccerPlayers table.bigScreen {
+		margin: 50px auto;
+		border: 1px solid white;
+		border-collapse: collapse;
+		border-radius: 20px;
+		padding: 10px;
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table.bigScreen td {
+		padding: 20px;
+		font-family: 'Times New Roman', serif;
+		font-size: 20px;
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table.bigScreen td.homeNews-title {
+		background-color: rgba(0,200,0,0.2);
+		font-size: 20px;
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table.bigScreen td.homeNews-data {
+		border: 1px solid white;
+		background-color: rgba(0,200,0,0.2);
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table.bigScreen td.homeNews-data span {
+		font-family: 'Times New Roman', serif;
+		font-size: 20px;
+	}
+	div.soccerPlayers table.mediumScreen {
+		display: none;
+	}
+	div.soccerPlayers h3 {
+		text-align: center;
+		font-size: 50px;
+		margin: 20px auto 10px;
+		padding: 5px 10px 5px;
+		text-decoration: underline;
+		font-weight: normal;
+		width: fit-content;
+		font-family: 'garamond', serif;
+	}
+	div.soccerPlayers div.row {
+		padding: 0px 50px;
+		margin: 40px 0px 20px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 40px;
+	}
+	div.soccerPlayers table.country {
+		width: 250px;
+		margin: 0px auto;
+		object-fit: contain;
+		border: 1px solid white;
+		border-collapse: collapse;
+	}
+	div.soccerPlayers table.country tr:nth-child(odd) {
+		background: #305260;
+	}
+	div.soccerPlayers table.country tr:nth-child(even) {
+		background: #305260;
+	}
+	div.soccerPlayers table.country th {
+		color: white;
+		padding: 10px;
+	}
+	div.soccerPlayers table.country td {
+		color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	div.soccerPlayers table.country td.open {
+		background-color: rgb(0,150,0);
+	}
+	div.soccerPlayers table.country td.closed {
+		background-color: rgb(150,0,0);
+	}
+	div.soccerPlayers table.country td.flag {
+		background-size: cover;
+		background-position: center center;
+		height: 90px;
+		padding: 0px;
+		border: 1px solid white;
+	}
+}
+/* ---------------------------- Big Screen: End ---------------------------- */
+
+/* ---------------------------- Small/Medium Screen: Start ---------------------------- */
+@media only screen and (max-width:1249px) {
+	div.soccerPlayers {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.soccerPlayers h1 {
+		margin: 20px 0px;
+		text-align: center;
+		font-size: 55px;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 0px 50px;
+	}
+	div.soccerPlayers p {
+		text-align: center;
+		font-size: 20px;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 0px 50px;
+	}
+	div.soccerPlayers table.mediumScreen {
+		margin: 30px auto;
+		border: 1px solid white;
+		border-collapse: collapse;
+		border-radius: 20px;
+		padding: 10px;
+		position: relative;
+		z-index: 1;
+		width: 90vw;
+		text-align: center;
+	}
+	div.soccerPlayers table.mediumScreen td {
+		padding: 20px;
+		font-family: 'Times New Roman', serif;
+		font-size: 3vw;
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table td.homeNews-title {
+		font-size: 4vw;
+		background-color: rgba(0,200,0,0.2);
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table.mediumScreen td.homeNews-data {
+		font-size: 4vw;
+		border: 1px solid white;
+		background-color: rgba(0,200,0,0.2);
+		position: relative;
+		z-index: 1;
+	}
+	div.soccerPlayers table.mediumScreen td.homeNews-data span {
+		font-family: 'Times New Roman', serif;
+		font-size: 4vw;
+	}
+
+	/* Small and Medium Screen Effecrts in Favour of Big Screens: Start */
+	div.soccerPlayers table.bigScreen {
+		display: none;
+	}
+	/* Small and Medium Screen Effecrts in Favour of Big Screens: End */
+
+	div.soccerPlayers h3 {
+		text-align: center;
+		font-size: 40px;
+		margin: 20px auto 10px;
+		padding: 5px 10px 5px;
+		text-decoration: underline;
+		font-weight: normal;
+		width: fit-content;
+		font-family: 'garamond', serif;
+	}
+	div.soccerPlayers div.row {
+		padding: 0px 0px;
+		margin: 0px 0px 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	div.soccerPlayers table.country {
+		width: 250px;
+		margin: 20px auto;
+		object-fit: contain;
+		border: 1px solid white;
+		border-collapse: collapse;
+	}
+	div.soccerPlayers table.country tr:nth-child(odd) {
+		background: #305260;
+	}
+	div.soccerPlayers table.country tr:nth-child(even) {
+		background: #305260;
+	}
+	div.soccerPlayers table.country th {
+		color: white;
+		padding: 10px;
+	}
+	div.soccerPlayers table.country td {
+		color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	div.soccerPlayers table.country td.open {
+		background-color: rgb(0,150,0);
+	}
+	div.soccerPlayers table.country td.closed {
+		background-color: rgb(150,0,0);
+	}
+	div.soccerPlayers table.country td.flag {
+		background-size: cover;
+		background-position: center center;
+		height: 90px;
+		padding: 0px;
+		border: 1px solid white;
+	}
+}
+/* ---------------------------- Small/Medium Screen: End ---------------------------- */

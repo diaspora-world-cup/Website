@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box;	
+	color: white;
+}
+
+/* ---------------------------- Big Screen: Start ---------------------------- */
+@media only screen and (min-width:1350px) {
+	.sales {
+		font-family: 'Courrier New', monospace;
+		color: white;
+		background-color: rgb(0,0,0);
+		width: 100vw;
+		padding: 30px;
+	}
+	.sales .listOfServices {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 30px;
+	}
+	.sales .listOfServices .serviceItem {
+		border-radius: 20px;
+		position: relative;
+		overflow: hidden;
+		height: 300px;
+	}
+	.sales .listOfServices .serviceItem img {
+		width: 100%;
+		border-radius: 20px;
+		display: block;
+		transition: transform 0.5s;
+	}
+	.sales .listOfServices .serviceItem .layer {
+		width: 100%;
+		height: 0px;
+		border-radius: 20px;
+		background: linear-gradient(rgba(0,255,0,0.1), rgb(0,100,0));
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px 5px;
+		text-align: center;
+		transition: 0.5s;
+	}
+	.sales .listOfServices .serviceItem .layer h4 {
+		font-size: 30px;
+		margin: 20px 0px 20px 0px;
+	}
+	.sales .listOfServices .serviceItem .layer p {
+		margin: 0px 0px 20px;
+		font-size: 18px;
+	}
+	.sales .listOfServices .serviceItem .layer a {
+		color: black;
+		text-decoration: none;
+		border: 1px solid white;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px 20px;
+	}
+	.sales .listOfServices .serviceItem .layer a:hover {
+		background-color: rgba(150,150,150,0.5);
+		border-color: white;
+		color: white; 
+	}
+	.sales .listOfServices .serviceItem:hover .layer {
+		height: 100%;
+	}
+}
+/* ---------------------------- Big Screen: End ---------------------------- */
+
+/* ---------------------------- Medium Screen: Start ---------------------------- */
+@media only screen and (max-width:1349px) {
+	.sales {
+		background-color: rgb(0,0,0);
+		width: 100vw;
+		padding: 30px;
+	}
+	.sales .listOfServices {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 30px;
+	}
+	.sales .listOfServices .serviceItem {
+		border-radius: 20px;
+		position: relative;
+		overflow: hidden;
+		height: 300px;
+	}
+	.sales .listOfServices .serviceItem img {
+		width: 50vw;
+		border-radius: 20px;
+		display: block;
+		transition: transform 0.5s;
+	}
+	.sales .listOfServices .serviceItem .layer {
+		width: 100%;
+		height: 100%;
+		border-radius: 20px;
+		background: linear-gradient(rgba(0,255,0,0.1), rgb(0,100,0));
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px 5px;
+		text-align: center;
+	}
+	.sales .listOfServices .serviceItem .layer h4 {
+		font-size: 30px;
+		margin: 20px 0px 20px 0px;
+	}
+	.sales .listOfServices .serviceItem .layer p {
+		margin: 0px 0px 20px;
+		font-size: 18px;
+	}
+	.sales .listOfServices .serviceItem .layer a {
+		color: black;
+		text-decoration: none;
+		border: 1px solid white;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px 20px;
+	}
+	.sales .listOfServices .serviceItem .layer a:active {
+		background-color: rgba(150,150,150,0.5);
+		border-color: white;
+		color: white; 
+	}
+}
+/* ---------------------------- Medium Screen: End ---------------------------- */
+
+/* ---------------------------- Small Screen: Start ---------------------------- */
+@media only screen and (max-width:910px) {
+	.sales {
+		background-color: rgb(0,0,0);
+		width: 100vw;
+		padding: 30px;
+	}
+	.sales .listOfServices {
+		display: flex;
+		flex-direction: column;
+	}
+	.sales .listOfServices .serviceItem {
+		border-radius: 20px;
+		position: relative;
+		margin: 0px auto;
+		overflow: hidden;
+		height: 300px;
+	}
+	.sales .listOfServices .serviceItem img {
+		width: 80vw;
+		border-radius: 20px;
+		display: block;
+		transition: transform 0.5s;
+	}
+	.sales .listOfServices .serviceItem .layer {
+		width: 80vw;
+		height: 100%;
+		border-radius: 20px;
+		background: linear-gradient(rgba(0,255,0,0.1), rgb(0,100,0));
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px 5px;
+		text-align: center;
+	}
+	.sales .listOfServices .serviceItem .layer h4 {
+		font-size: 30px;
+		margin: 20px 0px 20px 0px;
+	}
+	.sales .listOfServices .serviceItem .layer p {
+		margin: 0px 0px 20px;
+		font-size: 18px;
+	}
+	.sales .listOfServices .serviceItem .layer a {
+		color: black;
+		text-decoration: none;
+		border: 1px solid white;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px 20px;
+	}
+	.sales .listOfServices .serviceItem .layer a:active {
+		background-color: rgba(150,150,150,0.5);
+		border-color: white;
+		color: white; 
+	}
+}
+/* ---------------------------- Small Screen: End ---------------------------- */
+
+/* ---------------------------- Tiny Screen: Start ---------------------------- */
+@media only screen and (max-width:499px) {
+	.sales {
+		background-color: rgb(0,0,0);
+		width: 100vw;
+		padding: 30px;
+	}
+	.sales .listOfServices {
+		display: flex;
+		flex-direction: column;
+	}
+	.sales .listOfServices .serviceItem {
+		border-radius: 20px;
+		position: relative;
+		margin: 0px auto;
+		overflow: hidden;
+		height: 200px;
+	}
+	.sales .listOfServices .serviceItem img {
+		width: 80vw;
+		border-radius: 20px;
+		display: block;
+		transition: transform 0.5s;
+	}
+	.sales .listOfServices .serviceItem .layer {
+		width: 80vw;
+		height: 100%;
+		border-radius: 20px;
+		background: linear-gradient(rgba(0,255,0,0.1), rgb(0,100,0));
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px 5px;
+		text-align: center;
+	}
+	.sales .listOfServices .serviceItem .layer h4 {
+		font-size: 30px;
+		margin: 20px 0px 20px 0px;
+	}
+	.sales .listOfServices .serviceItem .layer p {
+		margin: 0px 0px 20px;
+		font-size: 18px;
+	}
+	.sales .listOfServices .serviceItem .layer a {
+		color: black;
+		text-decoration: none;
+		border: 1px solid white;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px 20px;
+	}
+	.sales .listOfServices .serviceItem .layer a:active {
+		background-color: rgba(150,150,150,0.5);
+		border-color: white;
+		color: white; 
+	}
+}
+/* ---------------------------- Tiny Screen: End ---------------------------- */

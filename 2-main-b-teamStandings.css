@@ -1,0 +1,790 @@
+* {
+	box-sizing: border-box;
+}
+
+/* ---------------------------- Big Screen: Start ---------------------------- */
+@media only screen and (min-width: 1440px) {
+
+	div.teamStandings {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+	}
+
+	/* Overview: Start */
+	div.teamStandings div.overview {
+		padding: 10px;
+		text-align: center;
+		position: relative;
+		display: block;
+		color: white;
+	}
+	div.teamStandings div.overview h1 {
+		font-size: 60px;
+	}
+	div.teamStandings div.overview p {
+		font-size: 1.2em;
+	}
+	/* Overview: End */
+
+	/* Tree: Start (Copied) */
+	div.tree.medium {
+		display: none;
+	}
+	div.tree {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 10px;
+		font-size: 25px;
+		color: white;
+	}
+	div.tree ul {
+		padding-top: 20px; 
+		position: relative;
+	}
+
+	div.tree li {
+		float: left; 
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 0px 0px 0px;
+		margin: 0px 0px;
+		left: -19px;
+	}
+	div.tree::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/*We will use ::before and ::after to draw the connectors*/
+
+	div.tree li::before, .tree li::after{
+		content: '';
+		position: absolute; top: 0; right: 50%;
+		border-top: 1px solid white;
+		width: 50%; height: 20px;
+	}
+	div.tree li::after{
+		right: auto; left: 50%;
+		border-left: 1px solid white;
+	}
+
+	/*We need to remove left-right connectors from elements without any siblings*/
+	div.tree li:only-child::after, .tree li:only-child::before {
+		display: none;
+	}
+
+	/*Remove space from the top of single children*/
+	div.tree li:only-child{ 
+		padding-top: 0;
+	}
+
+	/*Remove left connector from first child and right connector from last child*/
+	div.tree li:first-child::before, .tree li:last-child::after {
+		border: 0 none;
+	}
+	/*Adding back the vertical connector to the last nodes*/
+	div.tree li:last-child::before {
+		border-right: 1px solid white;
+		border-radius: 0 5px 0 0;
+	}
+	div.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+	}
+
+	/*Time to add downward connectors from parents*/
+	div.tree ul ul::before{
+		content: '';
+		position: absolute; top: 0; left: 50%;
+		border-left: 1px solid white;
+		width: 0; 
+		height: 20px;
+	}
+
+	div.tree li a{
+		border: 1px solid black;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-size: 14px;
+		display: inline-block;
+		border-radius: 5px;
+		color: black;
+		font-size: 0.88em;
+		background-color: white;
+	}
+	/* Tree: End (Copied) */
+
+	/* Groups: Start */
+	div.teamStandings div.groupStage.small {
+		display: none;
+	}
+	div.teamStandings div.groupStage {
+		width: fit-content;
+		margin: 0px auto;
+		text-align: center;
+		padding: 10px;
+	}
+	div.teamStandings div.groupStage h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 10px;
+		font-size: 25px;
+		color: white;
+	}
+	div.teamStandings table {
+		margin: 20px auto;
+		color: white;
+	}
+	div.teamStandings table th.groupName {
+		border-radius: 60px 0px 0px 60px;
+		background-color: darkgreen;
+	}
+	div.teamStandings table th.countryName {
+		width: 200px;
+	}
+	div.teamStandings table tr:nth-child(even){
+		background-color: #266150;
+	}
+	div.teamStandings table tr:nth-child(odd){
+		background-color: rgb(0,50,0);
+	}
+	div.teamStandings table td, div.teamStandings table th {
+		border: 1px solid white;	
+		padding: 10px;
+		text-align: left;
+		width: fit-content;
+	}
+	/* Groups: End */
+}
+/* ---------------------------- Big Screen: End ---------------------------- */
+
+/* ---------------------------- Medium Screen: Start ---------------------------- */
+@media only screen and (max-width:1439px) {
+	div.teamStandings {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+	}
+
+	/* Overview: Start */
+	div.teamStandings div.overview {
+		padding: 10px;
+		text-align: center;
+		position: relative;
+		display: block;
+		color: white;
+	}
+	div.teamStandings div.overview h1 {
+		font-size: 60px;
+	}
+	div.teamStandings div.overview p {
+		font-size: 1.3em;
+	}
+	/* Overview: End */
+
+	/* Tree: Start (Copied) */
+	div.tree {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0;
+		display: none;
+	}
+	div.tree.medium {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0px;
+		display: block;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		height: fit-content;
+		margin: 20px auto 20px;
+		padding: 10px;
+		font-size: 25px;
+		color: white;
+	}
+	div.tree.medium h3 {
+		text-decoration: underline;
+		margin-top: 0px;
+		font-family: URW Chancery L, cursive;
+		font-size: 25px;
+		color: white;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 0px auto 0px;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.tree ul {
+		padding-top: 20px; 
+		position: relative;
+	}
+	div.tree.medium ul.treeItem {
+		width: fit-content;
+		margin: 0px auto;
+		margin-bottom: 110px;
+	}
+	div.tree.medium ul.treeItem ul li {
+		width: fit-content;
+		margin: 0px auto;
+		padding-bottom: 50px;
+	}
+	div.tree.medium ul.treeItem ul li.lastR16 {
+		padding-bottom: 0px;
+	}
+	div.tree li {
+		float: left; 
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 0px 0px 0px;
+		margin: 0px 0px;
+		left: -19px;
+	}
+	div.tree::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/*We will use ::before and ::after to draw the connectors*/
+
+	div.tree li::before, .tree li::after{
+		content: '';
+		position: absolute; top: 0; right: 50%;
+		border-top: 1px solid white;
+		width: 50%; height: 20px;
+	}
+	div.tree li::after{
+		right: auto; left: 50%;
+		border-left: 1px solid white;
+	}
+
+	/*We need to remove left-right connectors from elements without any siblings*/
+	div.tree li:only-child::after, .tree li:only-child::before {
+		display: none;
+	}
+
+	/*Remove space from the top of single children*/
+	div.tree li:only-child{ 
+		padding-top: 0;
+	}
+
+	/*Remove left connector from first child and right connector from last child*/
+	div.tree li:first-child::before, .tree li:last-child::after {
+		border: 0 none;
+	}
+	/*Adding back the vertical connector to the last nodes*/
+	div.tree li:last-child::before {
+		border-right: 1px solid white;
+		border-radius: 0 5px 0 0;
+	}
+	div.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+	}
+
+	/*Time to add downward connectors from parents*/
+	div.tree ul ul::before{
+		content: '';
+		position: absolute; top: 0; left: 50%;
+		border-left: 1px solid white;
+		width: 0; 
+		height: 20px;
+	}
+
+	div.tree li a{
+		border: 1px solid black;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-size: 14px;
+		display: inline-block;
+		border-radius: 5px;
+		color: black;
+		font-size: 0.88em;
+		background-color: white;
+	}
+	/* Tree: End (Copied) */
+
+	/* Groups: Start */
+	div.teamStandings div.groupStage.small {
+		display: none;
+	}
+	div.teamStandings div.groupStage {
+		width: fit-content;
+		margin: 0px auto;
+		text-align: center;
+		padding: 10px;
+	}
+	div.teamStandings div.groupStage h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 10px;
+		font-size: 25px;
+		color: white;
+	}
+	div.teamStandings table {
+		margin: 20px auto;
+		color: white;
+	}
+	div.teamStandings table th.groupName {
+		border-radius: 60px 0px 0px 60px;
+		background-color: darkgreen;
+	}
+	div.teamStandings table th.countryName {
+		width: 200px;
+	}
+	div.teamStandings table tr:nth-child(even){
+		background-color: #266150;
+	}
+	div.teamStandings table tr:nth-child(odd){
+		background-color: rgb(0,50,0);
+	}
+	div.teamStandings table td, div.teamStandings table th {
+		border: 1px solid white;	
+		padding: 10px;
+		text-align: left;
+		width: fit-content;
+	}
+	/* Groups: End */
+}
+/* ---------------------------- Medium Screen: End ---------------------------- */
+
+/* ---------------------------- Small Screen: Start ---------------------------- */
+@media only screen and (max-width:1000px) {
+	div.teamStandings {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+	}
+
+	/* Overview: Start */
+	div.teamStandings div.overview {
+		padding: 10px;
+		text-align: center;
+		position: relative;
+		display: block;
+		color: white;
+	}
+	div.teamStandings div.overview h1 {
+		font-size: 10vw;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	div.teamStandings div.overview p {
+		font-size: 1.1em;
+		width: fit-content;
+		margin: 0px auto 20px;
+		padding: 0px 25px;
+	}
+	/* Overview: End */
+
+	/* Tree: Start (Copied) */
+	div.tree {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0;
+		display: none;
+	}
+	div.tree.medium {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0px;
+		display: block;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		height: fit-content;
+		margin: 20px auto 20px;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.tree.medium h3 {
+		text-decoration: underline;
+		margin-top: 0px;
+		font-family: URW Chancery L, cursive;
+		font-size: 25px;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 0px auto 0px;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.tree ul {
+		padding-top: 20px; 
+		position: relative;
+	}
+	div.tree.medium ul.treeItem {
+		width: fit-content;
+		margin: 0px auto;
+		margin-bottom: 110px;
+	}
+	div.tree.medium ul.treeItem ul li {
+		width: fit-content;
+		margin: 0px auto;
+		padding-bottom: 50px;
+	}
+	div.tree.medium ul.treeItem ul li.lastR16 {
+		padding-bottom: 0px;
+	}
+	div.tree li {
+		float: left; 
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 0px 0px 0px;
+		margin: 0px 0px;
+		left: -19px;
+	}
+	div.tree::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/*We will use ::before and ::after to draw the connectors*/
+
+	div.tree li::before, .tree li::after{
+		content: '';
+		position: absolute; top: 0; right: 50%;
+		border-top: 1px solid white;
+		width: 50%; height: 20px;
+	}
+	div.tree li::after{
+		right: auto; left: 50%;
+		border-left: 1px solid white;
+	}
+
+	/*We need to remove left-right connectors from elements without any siblings*/
+	div.tree li:only-child::after, .tree li:only-child::before {
+		display: none;
+	}
+
+	/*Remove space from the top of single children*/
+	div.tree li:only-child{ 
+		padding-top: 0;
+	}
+
+	/*Remove left connector from first child and right connector from last child*/
+	div.tree li:first-child::before, .tree li:last-child::after {
+		border: 0 none;
+	}
+	/*Adding back the vertical connector to the last nodes*/
+	div.tree li:last-child::before {
+		border-right: 1px solid white;
+		border-radius: 0 5px 0 0;
+	}
+	div.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+	}
+
+	/*Time to add downward connectors from parents*/
+	div.tree ul ul::before{
+		content: '';
+		position: absolute; top: 0; left: 50%;
+		border-left: 1px solid white;
+		width: 0; 
+		height: 20px;
+	}
+
+	div.tree li a{
+		border: 1px solid black;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-size: 14px;
+		display: inline-block;
+		border-radius: 5px;
+		color: black;
+		font-size: 0.88em;
+		background-color: white;
+	}
+	/* Tree: End (Copied) */
+
+	/* Groups: Start */
+	div.teamStandings div.groupStage {
+		width: fit-content;
+		margin: 0px auto;
+		text-align: center;
+		padding: 10px;
+		display: none;
+	}
+	div.teamStandings div.groupStage.small {
+		width: fit-content;
+		margin: 0px auto;
+		text-align: center;
+		padding: 10px;
+		display: block;
+	}
+	div.teamStandings div.groupStage.small p#key{
+		text-decoration: underline;
+		font-size: 30px;
+	}
+	div.teamStandings div.groupStage.small th.countryName {
+		width: 120px;
+	}
+	div.teamStandings div.groupStage h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.teamStandings table {
+		margin: 20px auto;
+		color: white;
+	}
+	div.teamStandings table tr:nth-child(even){
+		background-color: #266150;
+	}
+	div.teamStandings table tr:nth-child(odd){
+		background-color: rgb(0,50,0);
+	}
+	div.teamStandings table td, div.teamStandings table th {
+		border: 1px solid white;	
+		padding: 10px;
+		text-align: left;
+		width: fit-content;
+	}
+	/* Groups: End */
+}
+/* ---------------------------- Small Screen: End ---------------------------- */
+
+/* ---------------------------- Tiny Screen: Start ---------------------------- */
+@media only screen and (max-width:499px) {
+	div.teamStandings {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+	}
+
+	/* Overview: Start */
+	div.teamStandings div.overview {
+		padding: 10px;
+		text-align: center;
+		position: relative;
+		display: block;
+		color: white;
+	}
+	div.teamStandings div.overview h1 {
+		font-size: 10vw;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	div.teamStandings div.overview p {
+		font-size: 1.1em;
+		width: fit-content;
+		margin: 0px auto 20px;
+		padding: 0px 25px;
+	}
+	/* Overview: End */
+
+	/* Tree: Start (Copied) */
+	div.tree {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0;
+		display: none;
+	}
+	div.tree.medium {
+		width: fit-content;
+		margin: 0px auto; 
+		text-align: center;
+		padding: 0px;
+		display: block;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		height: fit-content;
+		margin: 20px auto 20px;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.tree.medium h3 {
+		text-decoration: underline;
+		margin-top: 0px;
+		font-family: URW Chancery L, cursive;
+		font-size: 25px;
+	}
+	div.tree h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 0px auto 0px;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.tree ul {
+		padding-top: 20px; 
+		position: relative;
+	}
+	div.tree.medium ul.treeItem {
+		width: fit-content;
+		margin: 0px auto;
+		margin-bottom: 110px;
+	}
+	div.tree.medium ul.treeItem ul li {
+		width: fit-content;
+		margin: 0px auto;
+		padding-bottom: 50px;
+	}
+	div.tree.medium ul.treeItem ul li.lastR16 {
+		padding-bottom: 0px;
+	}
+	div.tree li {
+		float: left; 
+		text-align: center;
+		list-style-type: none;
+		position: relative;
+		padding: 20px 0px 0px 0px;
+		margin: 0px 0px;
+		left: -19px;
+	}
+	div.tree::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/*We will use ::before and ::after to draw the connectors*/
+
+	div.tree li::before, .tree li::after{
+		content: '';
+		position: absolute; top: 0; right: 50%;
+		border-top: 1px solid white;
+		width: 50%; height: 20px;
+	}
+	div.tree li::after{
+		right: auto; left: 50%;
+		border-left: 1px solid white;
+	}
+
+	/*We need to remove left-right connectors from elements without any siblings*/
+	div.tree li:only-child::after, .tree li:only-child::before {
+		display: none;
+	}
+
+	/*Remove space from the top of single children*/
+	div.tree li:only-child{ 
+		padding-top: 0;
+	}
+
+	/*Remove left connector from first child and right connector from last child*/
+	div.tree li:first-child::before, .tree li:last-child::after {
+		border: 0 none;
+	}
+	/*Adding back the vertical connector to the last nodes*/
+	div.tree li:last-child::before {
+		border-right: 1px solid white;
+		border-radius: 0 5px 0 0;
+	}
+	div.tree li:first-child::after{
+		border-radius: 5px 0 0 0;
+	}
+
+	/*Time to add downward connectors from parents*/
+	div.tree ul ul::before{
+		content: '';
+		position: absolute; top: 0; left: 50%;
+		border-left: 1px solid white;
+		width: 0; 
+		height: 20px;
+	}
+
+	div.tree li a{
+		border: 1px solid black;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #666;
+		font-size: 14px;
+		display: inline-block;
+		border-radius: 5px;
+		color: black;
+		font-size: 0.88em;
+		background-color: white;
+	}
+	/* Tree: End (Copied) */
+
+	/* Groups: Start */
+	div.teamStandings div.groupStage {
+		width: fit-content;
+		margin: 0px auto;
+		text-align: center;
+		padding: 10px;
+		display: none;
+	}
+	div.teamStandings div.groupStage.small {
+		width: fit-content;
+		margin: 0px auto;
+		text-align: center;
+		padding: 10px;
+		display: block;
+	}
+	div.teamStandings div.groupStage.small p#key{
+		text-decoration: underline;
+		font-size: 30px;
+	}
+	div.teamStandings div.groupStage.small th.countryName {
+		width: 120px;
+	}
+	div.teamStandings div.groupStage h2 {
+		border: 1px solid gray;
+		background-color: gray;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 10px;
+		font-size: 25px;
+	}
+	div.teamStandings table {
+		margin: 20px auto;
+		color: white;
+	}
+	div.teamStandings table tr:nth-child(even){
+		background-color: #266150;
+	}
+	div.teamStandings table tr:nth-child(odd){
+		background-color: rgb(0,50,0);
+	}
+	div.teamStandings table td, div.teamStandings table th {
+		border: 1px solid white;	
+		padding: 10px;
+		text-align: left;
+		width: fit-content;
+	}
+	/* Groups: End */
+}
+/* ---------------------------- Tiny Screen: End ---------------------------- */
+

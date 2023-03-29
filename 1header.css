@@ -1,0 +1,275 @@
+* {
+	box-sizing: border-box;
+	color: white;
+}
+/* ------------------------------------ Big: Start ------------------------------------ */
+@media only screen and (min-width: 1160px) {
+	.header {
+		font-family: 'Courrier New', monospace;
+		color: white;
+		width: 100vw;
+		height: 80vh;
+		background-image: url(Media/headerImageB.jpg);
+		background-size: cover;
+		background-position: center bottom;
+	}
+
+	/* Naivagtion: Start */
+	.header nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+	}
+	.header nav img {
+		width: 200px;
+		height: 90px;
+		border: 1px solid white;
+		border-radius: 5px;
+		position: relative;
+		left: 20px;
+		top: 20px;
+	}
+	.header nav ul {
+		display: flex;
+		list-style-type: none;
+		font-family: 'Times New Roman', serif;
+	}
+	.header nav ul a {
+		text-decoration: none;
+		font-size: 20px; 
+		color: white;
+		margin-right: 80px;
+		position: relative;
+	}
+	.header nav ul a.main-nav-link::after {
+		content: '';
+		width: 0px;
+		height: 3px;
+		background: white;
+		position: absolute;
+		left: 0px;
+		bottom: -6px;
+		transition: 0.32s;
+	}
+	.header nav ul a.main-nav-link:hover::after {
+		width: 100%;
+	}
+	.header nav .dropdown-content {
+		display: none;
+		position: absolute;
+		width: 210px;
+	}
+	.header nav .dropdown-content li {
+		margin: 10px 0px;
+		padding: 0px;
+	}
+	.header nav .dropdown-content a {
+		margin: 0px 0px;
+	}
+	.header nav .openDrop {
+		display: none;	
+	}
+	.header nav .dropdown-section:hover .dropdown-content {
+		display: block;	
+	}
+	.header nav .dropdown-section:hover .openDrop {
+		display: inline-block;	
+	}
+	.header nav .dropdown-section:hover .closeDrop {
+		display: none;	
+	}
+	.header nav .dropdown-section:hover .dropdown-content a li {
+		position: relative;
+		width: fit-content;
+	}
+	.header nav .dropdown-section:hover .dropdown-content a li::after {
+		content: '';
+		width: 0px;
+		height: 3px;
+		background: white;
+		position: absolute;
+		left: 0px;
+		bottom: -6px;
+		transition: 0.32s;
+	}
+	.header nav .dropdown-section:hover .dropdown-content a li:hover::after {
+		width: 100%;
+	}
+	/* Naivagtion: End */
+
+	/* Big Screen Effects in Favour of Small and Medium Screen Effects: Start */
+		.header nav.smallScreen, .header nav.mediumScreen {
+			display: none;
+		}
+	/* Big Screen Effects in Favour of Small and Medium Screen Effects: End */
+
+	/* Header Text: Start */
+	.header .headerText span {
+		font-size: 80px;
+	}
+	.header .headerText {
+		font-size: 40px;
+		position: absolute;
+		top: 140px;
+		left: 30px;
+	}
+	/* Header Text: End */
+}
+/* ------------------------------------ Big: End ------------------------------------ */
+
+/* ------------------------------------ Medium: Start ------------------------------------ */
+@media only screen and (max-width: 1159px) {
+	.header {
+		width: 100vw;
+		height: 80vh;
+		background-image: url(Media/headerImageM.jpg);
+		background-size: cover;
+		background-position: center bottom;
+	}
+
+	/* Naivagtion: Start */
+	.header nav.smallScreen, .header nav.mediumScreen {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position:;
+	}
+	.header nav.smallScreen img, .header nav.mediumScreen img {
+		width: 200px;
+		height: 90px;
+		border: 1px solid white;
+		border-radius: 5px;
+		position: absolute;
+		left: 20px;
+		top: 20px;
+	}
+	.header nav.smallScreen i, .header nav.mediumScreen i {
+		position: absolute;
+		font-size: 40px;
+		top: 20px;
+		right: 40px;
+	}
+	.header nav.smallScreen ul, .header nav.mediumScreen ul {
+		background-color: rgb(0,100,100);
+		position: relative;
+		height: 80vh;
+		width: 180px;
+		top: 0px;
+		margin: 0px;
+		padding: 0px;
+		z-index: 2;
+		transition: right 0.4s;
+	}
+	.header nav.smallScreen ul i, .header nav.mediumScreen ul i {
+		position: relative;
+		display: block;
+		z-index: 2;
+		top: 10px;
+		left: 20px;
+		margin-bottom: 20px;
+	}
+	.header nav.smallScreen ul li, .header nav.mediumScreen ul li {
+		list-style-type: none;
+		margin: 0px 0px;
+		padding: 10px 5px;
+		position: relative;
+		top: 0px;
+	}
+	.header nav.smallScreen ul li.green-odd, .header nav.mediumScreen ul li.green-odd {
+		background-color: rgba(0,100,0,1);
+	}
+	.header nav.smallScreen ul li.green-even, .header nav.mediumScreen ul li.green-even {
+		background-color: rgba(0,150,0,1);
+	}
+	.header nav.smallScreen ul li.blue-odd, .header nav.mediumScreen ul li.blue-odd {
+		background-color: rgba(0,0,50,1);
+	}
+	.header nav.smallScreen ul li.blue-even, .header nav.mediumScreen ul li.blue-even {
+		background-color: rgba(0,0,250,1);
+	}
+	.header nav.smallScreen ul hr, .header nav.mediumScreen ul hr {
+		border: 1px solid white;
+		margin: 0px;
+	}
+	.header nav.smallScreen ul li i, .header nav.mediumScreen ul li i {
+		display: inline;
+		font-size: 20px;
+		position: static;
+	}
+	.header nav.smallScreen ul a, .header nav.mediumScreen ul a {
+		text-decoration: none;
+	}
+	#sideMenu {
+		display: none;
+	}
+	#sideMenu a:active li {
+		background: rgb(0,0,100);
+	}
+	/* Naivagtion: End */
+
+	/* Header Text: Start */
+	.header div.headerText {
+		display: block;
+		position: absolute;
+		top: 22%;
+		left: 50px;
+	}
+	.header div.headerText span {
+		font-size: 7vw;
+		background-color: rgba(10,10,10,0.5);
+		padding: 10px 20px;
+		border-radius: 10px;
+	}
+	.header div.headerText p {
+		font-size: 3.29vw;
+		text-align: center;
+	}
+	/* Header Text: End */
+
+	/* Small Screen & Medium Screen Effects in Favour of Big Screen Effects: Start */
+		.header nav.bigScreen {
+			display: none;
+		}
+	/* Small Screen & Medium Screen Effects in Favour of Big Screen Effects: End */
+}
+/* ------------------------------------ Medium: End ------------------------------------ */
+
+/* ------------------------------------ Small: Start ------------------------------------ */
+@media only screen and (max-width: 550px) {
+	.header {
+		width: 100vw;
+		height: 80vh;
+		background-image: url(Media/headerImageS.jpg);
+		background-size: cover;
+		background-position: 100% 90%;
+	}
+
+	/* Naivagtion: Start */
+	#sideMenu {
+		display: none;
+	}
+	/* Naivagtion: End */
+
+	/* Header Text: Start */
+	.header div.headerText {
+		position: absolute;
+		top: 150px;
+		left: 50px;
+	}
+	.header div.headerText p span {
+		font-size: 35px;
+		background: none;
+	}
+	.header div.headerText p {
+		font-size: 23px;
+	}
+	/* Header Text: End */
+
+	/* Small Screen & Medium Screen Effects in Favour of Big Screen Effects: Start */
+	.header nav.bigScreen {
+		display: none;
+	}
+	/* Small Screen & Medium Screen Effects in Favour of Big Screen Effects: End */
+}
+/* ------------------------------------ Small: End ------------------------------------ */

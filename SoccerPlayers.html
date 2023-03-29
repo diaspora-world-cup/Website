@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> DWC: Soccer Players </title>
+	<link href="1header.css" rel="stylesheet">
+	<link href="2-main-d-soccerPlayers.css" rel="stylesheet">
+	<link href="3sales.css" rel="stylesheet">
+	<link href="4footer.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Ubuntu|Lora|Space+Mono" rel="stylesheet">
+	<script src="Script.js"></script>
+	<script src="https://kit.fontawesome.com/bc7d7ef26c.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!-- ------------------------------------------- Header: Start ------------------------------------------- -->
+	<div class="header">
+
+		<!-- Navigation: Start -->
+		<nav class="bigScreen">
+			<a href="index.html#aboutUs"> <img src="Media/DWCLogo.jpeg"> </a>
+			<ul>
+				<a href="index.html#aboutUs" class="main-nav-link"> <li> About Us </li> </a>
+				<div class="dropdown-section">
+					<a>
+						Tournament
+						<i class="fa-solid fa-square-caret-down closeDrop"></i>
+						<i class="fa-regular fa-square-caret-down openDrop"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="TeamStandings.html#teamStandings"> <li> Team Standings </li> </a>
+						<a href="MatchSchedule.html#matchSchedule"> <li> Match Schedule </li> </a>
+					</div>
+				</div>
+				<div class="dropdown-section">
+					<a>
+						Join In
+						<i class="fa-solid fa-square-caret-down closeDrop"></i>
+						<i class="fa-regular fa-square-caret-down openDrop"></i>
+					</a>	
+					<div class="dropdown-content">
+						<a href="SoccerPlayers.html#soccerPlayers"> <li> Soccer Players </li> </a>
+						<a href="Tickets.html#tickets"> <li> Tickets </li> </a>
+						<a href="Sponsors.html#sponsors"> <li> Sponsors </li> </a>
+					</div>
+				</div>
+				<a href="FAQ.html#FAQ" class="main-nav-link"> <li> FAQ </li> </a>
+				<a href="ContactUs.html#contactUs" class="main-nav-link"> <li> Contact Us </li> </a>
+			</ul>
+		</nav>
+		<!-- Navigation: End -->
+
+		<!-- Small and Medium Screen: Start -->
+		<nav class="smallScreen mediumScreen">
+			<a href="index.html#aboutUs"> <img src="Media/DWCLogo.jpeg"> </a>
+			<i id="barIcon" class="fa-solid fa-bars" onclick="openMenu()"></i>
+			<ul id="sideMenu"> 
+				<i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+				
+				<a href="index.html#aboutUs"> <li class="green-odd"> About Us </li> </a>
+
+				<hr>
+				<li class="green-even"> TOURNAMENT <i class="fa-solid fa-caret-down"></i> </li>
+				<a href="TeamStandings.html#teamStandings"> <li class="green-odd"> Team Standings </li> </a>
+				<a href="MatchSchedule.html#matchSchedule"> <li class="green-even"> Match Schedule </li> </a>
+
+				<hr>
+				<li class="green-even"> JOIN IN <i class="fa-solid fa-caret-down"></i> </li>
+				<a href="SoccerPlayers.html#soccerPlayers"> <li class="green-odd"> Soccer Players </li> </a>
+				<a href="Tickets.html#tickets"> <li class="green-even">  Tickets </li> </a>
+				<a href="Sponsors.html#sponsors"> <li class="green-odd">  Sponsors</li> </a> 
+
+				<hr>
+				<a href="FAQ.html#FAQ"> <li class="green-even"> FAQ </li> </a>
+				<a href="ContactUs.html#contactUs"> <li class="green-odd"> Contact Us </li> </a>
+			</ul>
+		</nav>
+		<!-- Small and Medium Screen: End -->
+
+		<!-- Header Text: Start -->
+		<div class="headerText">
+			<p> <span>DIASPORA WORLD CUP</span> <br><br> International Soccer Tournament <br><br> Ottawa, Canada </p>  
+		</div>
+		<!-- Header Text: End -->
+
+	</div>
+	<!-- ------------------------------------------- Header: End ------------------------------------------- -->
+
+	<!-- ------------------------------------------- Main - Soccer Players: Start ------------------------------------------- -->
+	<div class="soccerPlayers">
+
+		<h1 id="soccerPlayers"> SOCCER PLAYERS </h1>
+
+		<p> There are 32 competing teams, 31 of which are countries and 1 of which is the United Nations. </p>
+		<p> Soccer players sign up to represent the country of their cultural heritage. </p>
+		<p> Soccer players who do not identify with any of the 31 participating countries can sign up for the United Nations team. </p>
+
+		<table class="bigScreen">
+			<tr>
+				<td rowspan="2" class="homeNews-title"> REGISTRATION DEADLINE </td>
+				<td class="homeNews-data"> 10 APRIL 2023 | 11:59 PM (EASTERN TIME) </td>
+			</tr>
+			<tr>
+				<td class="homeNews-data"> <span id="countDown3"></span> </td>
+			</tr>
+		</table>
+
+		<table class="smallScreen mediumScreen">
+			<tr>
+				<td class="homeNews-title"> REGISTRATION DEADLINE  </td>			</tr>
+			<tr>
+				<td class="homeNews-data"> 10 APRIL 2023 | 11:59 PM (EASTERN TIME) </td>
+			</tr>
+			<tr>
+				<td class="homeNews-data"> <span id="countDown4"></span> </td>
+			</tr>
+		</table>
+
+		<h3> Countries / Teams </h3>
+		<p> USA: United States of America </p>
+
+		<!-- Row 1: Start -->
+		<div class="row">
+
+				<!-- Country 1: Start -->
+				<table class="country">
+					<tr>
+						<th> 1. AFGHANISTAN </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Afghanistan.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230725783534056" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 1: End -->
+
+				<!-- Country 2: Start -->
+				<table class="country">
+					<tr>
+						<th> 2. ARGENTINA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Argentina.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230727731041246" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 2: End -->
+
+				<!-- Country 3: Start -->
+				<table class="country">
+					<tr>
+						<th> 3. AUSTRALIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Australia.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230728497556267" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 3: End -->
+
+				<!-- Country 4: Start -->
+				<table class="country">
+					<tr>
+						<th> 4. BRAZIL  </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Brazil.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230728801731251" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 4: End -->
+
+			</div>
+			<!-- Row 1: End-->
+
+			<!-- Row 2: Start -->
+			<div class="row">
+
+				<!-- Country 5: Start -->
+				<table class="country">
+					<tr>
+						<th> 5. CANADA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Canada.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230728772051253" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 5: End -->
+
+				<!-- Country 6: Start -->
+				<table class="country">
+					<tr>
+						<th> 6. CHINA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/China.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230728241496257" target="_blank"> Join Team (Open) </td>
+					</tr>
+				</table>
+				<!-- Country 6: End -->
+
+				<!-- Country 7: Start -->
+				<table class="country">
+					<tr>
+						<th> 7. COLOMBIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Colombia.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230733880232250" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 7: End -->
+
+				<!-- Country 8: Start -->
+				<table class="country">
+					<tr>
+						<th> 8. DOMINICAN REPUBLIC </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/DR.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230734168479263" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 8: End -->
+
+			</div>
+			<!-- Row 2: End-->
+
+			<!-- Row 3: Start -->
+			<div class="row">
+
+				<!-- Country 9: Start -->
+				<table class="country">
+					<tr>
+						<th> 9. EGYPT </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Egypt.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230734186358259" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 9: End -->
+
+				<!-- Country 10: Start -->
+				<table class="country">
+					<tr>
+						<th> 10. ETHIOPIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Ethiopia.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230734646843259" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 10: End -->
+
+				<!-- Country 11: Start -->
+				<table class="country">
+					<tr>
+						<th> 11. FRANCE </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/France.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230734474393258" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 11: End -->
+
+				<!-- Country 12: Start -->
+				<table class="country">
+					<tr>
+						<th> 12. GERMANY </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Germany.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230734945146257" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 12: End -->
+
+			</div>
+			<!-- Row 3: End-->
+
+			<!-- Row 4: Start -->
+			<div class="row">
+
+				<!-- Country 13: Start -->
+				<table class="country">
+					<tr>
+						<th> 13. HAITI </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Haiti.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230735025750248" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 13: End -->
+
+				<!-- Country 14: Start -->
+				<table class="country">
+					<tr>
+						<th> 14. INDIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/India.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230734740340246" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 14: End -->
+
+				<!-- Country 15: Start -->
+				<table class="country">
+					<tr>
+						<th> 15. INDONESIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Indonesia.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230735280120242" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 15: End -->
+
+				<!-- Country 16: Start -->
+				<table class="country">
+					<tr>
+						<th> 16. IRAN </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Iran.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230735978133260" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 16: End -->
+
+			</div>
+			<!-- Row 4: End-->
+
+			<!-- Row 5: Start -->
+			<div class="row">
+
+				<!-- Country 17: Start -->
+				<table class="country">
+					<tr>
+						<th> 17. JAMAICA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Jamaica.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230735233742250" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 17: End -->
+
+				<!-- Country 18: Start -->
+				<table class="country">
+					<tr>
+						<th> 18. JAPAN </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Japan.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230735911505250" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 18: End -->
+
+				<!-- Country 19: Start -->
+				<table class="country">
+					<tr>
+						<th> 19. LEBANON </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Lebanon.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230735620651249" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 19: End -->
+
+				<!-- Country 20: Start -->
+				<table class="country">
+					<tr>
+						<th> 20. MEXICO </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Mexico.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230736333878262" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 20: End -->
+
+			</div>
+			<!-- Row 5: End-->
+
+			<!-- Row 6: Start -->
+			<div class="row">
+
+				<!-- Country 21: Start -->
+				<table class="country">
+					<tr>
+						<th> 21. MOROCCO </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Morocco.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230736581447259" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 21: End -->
+
+				<!-- Country 22: Start -->
+				<table class="country">
+					<tr>
+						<th> 22. NIGERIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Nigeria.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230736663833259" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 22: End -->
+
+				<!-- Country 23: Start -->
+				<table class="country">
+					<tr>
+						<th> 23. PHILIPPINES </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Philippines.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230736397548266" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 23: End -->
+
+				<!-- Country 24: Start -->
+				<table class="country">
+					<tr>
+						<th> 24. RWANDA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Rwanda.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230736835599269" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 24: End -->
+
+			</div>
+			<!-- Row 6: End-->
+
+		<!-- Row 7: Start -->
+		<div class="row">
+
+				<!-- Country 25: Start -->
+				<table class="country">
+					<tr>
+						<th> 25. SENEGAL </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Senegal.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230737055302246" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 25: End -->
+
+				<!-- Country 26: Start -->
+				<table class="country">
+					<tr>
+						<th> 26. SOUTH KOREA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/SK.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230737403506249" target="_blank"> Join Team (Open) </td>
+					</tr>
+				</table>
+				<!-- Country 26: End -->
+
+				<!-- Country 27: Start -->
+				<table class="country">
+					<tr>
+						<th> 27. SYRIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Syria.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230736643581257" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 27: End -->
+
+				<!-- Country 28: Start -->
+				<table class="country">
+					<tr>
+						<th> 28. TURKEY </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Turkey.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230737273876264" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 28: End -->
+
+			</div>
+			<!-- Row 7: End-->
+
+			<!-- Row 8: Start -->
+			<div class="row">
+
+				<!-- Country 29: Start -->
+				<table class="country">
+					<tr>
+						<th> 29. UKRAINE </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Ukraine.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230737362971259" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 29: End -->
+
+				<!-- Country 30: Start -->
+				<table class="country">
+					<tr>
+						<th> 30. UNITED KINGDOM </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/UK.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230738180462253" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 30: End -->
+
+				<!-- Country 31: Start -->
+				<table class="country">
+					<tr>
+						<th> 31. UNITED NATIONS </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/UN.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230737896160261" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 31: End -->
+
+				<!-- Country 32: Start -->
+				<table class="country">
+					<tr>
+						<th> 32. USA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/USA.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230738061369257" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 32: End -->
+
+			</div>
+			<!-- Row 8: End-->
+
+			<h3> Special Requests </h3>
+	
+			<!-- Row 9: Start -->
+			<div class="row">
+
+				<!-- Country 33: Start -->
+				<table class="country">
+					<tr>
+						<th> 33. ALBANIA </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Albania.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230805071365249" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 33: End -->
+
+				<!-- Country 34: Start -->
+				<table class="country">
+					<tr>
+						<th> 34. MYANMAR </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Myanmar.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230805707078256" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 34: End -->
+
+				<!-- Country 35: Start -->
+				<table class="country">
+					<tr>
+						<th> 35. IRELAND </th>
+					</tr>
+					<tr>
+						<td class="flag" style="background-image:url('Media/Flags/Ireland.jpeg');"> </td>
+					</tr>
+					<tr>
+ 						<td class="open join"> <a href="https://form.jotform.com/230821171305242" target="_blank"> Join Team (Open) </a> </td>
+					</tr>
+				</table>
+				<!-- Country 35: End -->
+
+			</div>
+			<!-- Row 9: End-->
+
+	</div>
+	<!-- ------------------------------------------- Main - Soccer Players: End ------------------------------------------- -->
+
+	<!-- ------------------------------------------- Sales: Start ------------------------------------------- -->
+	<div class="sales">
+
+		<!-- List of Services: Start -->
+		<div class="listOfServices">
+
+			<div class="serviceItem">
+				<img src="Media/salesSignUp.jpg">
+				<div class="layer">
+					<h4> Soccer Players </h4>
+					<p> Represent your country of origin! </p>
+					<a href="SoccerPlayers.html#soccerPlayers"> Sign Up </a> 
+				</div>
+			</div>
+
+			<div class="serviceItem">
+				<img src="Media/salesTickets.jpg">
+				<div class="layer">
+					<h4> Fans </h4>
+					<p> Support your favourite team! </p>
+					<a href="Tickets.html#tickets"> Tickets </a> 
+				</div>
+			</div>
+
+			<div class="serviceItem">
+				<img src="Media/salesAdvertise.jpg">
+				<div class="layer">
+					<h4> Businesses </h4>
+					<p> Market your products and services! </p>
+					<a href="Sponsors.html#sponsors"> Advertise </a>
+				</div>
+			</div>
+
+		</div>
+		<!-- List of Services: End -->
+
+	</div>
+	<!-- ------------------------------------------- Sales: End ------------------------------------------- -->
+
+	<!-- ------------------------------------------- Footer: Start ------------------------------------------- -->
+	<div class="footer">
+
+		<div class="col1">
+			<h2> DIASPORA WORLD CUP </h2>
+			<img src="Media/DWCLogo.jpeg">
+			<p> <i class="fa-solid fa-paper-plane"></i> info@diaspora-world-cup.com </p>
+		</div>
+
+		<div class="col2">
+			<h2> FOLLOW US </h2>
+			<a href="https://www.facebook.com/profile.php?id=100090724760168" target="_blank"> Facebook <i class="fa-brands fa-facebook-f"></i> </a>
+			<a href="https://www.instagram.com/diaspora_world_cup/" target="_blank"> Instagram <i class="fa-brands fa-instagram"></i> </a>
+			<a href="https://www.youtube.com/@diaspora_world_cup" target="_blank"> YouTube <i class="fa-brands fa-youtube"></i> </a>
+		</div>
+
+		<div class="col3">
+			<h2> JOIN IN </h2>
+			<a href="SoccerPlayers.html#soccerPlayers"> Soccer Players <i class="fa-solid fa-futbol"></i> </a>
+			<a href="Tickets.html#tickets"> Tickets <i class="fa-solid fa-ticket"></i> </a>
+			<a href="Sponsors.html#sponsors"> Sponsors <i class="fa-solid fa-rectangle-ad"></i> </a>
+		</div>
+
+	</div>
+	<!-- ------------------------------------------- Footer: End ------------------------------------------- -->
+</body>
+
+</html>

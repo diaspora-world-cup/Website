@@ -1,0 +1,450 @@
+* {
+	box-sizing: border-box;
+}
+
+/* ---------------------------- Big Screen: Start ---------------------------- */
+@media only screen and (min-width: 1400px) {
+	div.matchSchedule {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.matchSchedule h1 {
+		margin: 20px 0px 0px;
+		text-align: center;
+		font-size: 70px;
+	}
+	div.matchSchedule p {
+		text-align: center;
+		font-size: 20px;
+	}
+	div.matchSchedule table.miniNav.smallScreen {
+		display: none;
+	}
+	div.matchSchedule table.miniNav {
+		margin: 0px auto;
+	}
+	div.matchSchedule table.miniNav th, div.matchSchedule table.miniNav td {
+		text-align: left;
+		padding: 10px;
+		background-color: rgb(230,230,230);
+		color: black;
+	}
+	div.matchSchedule table.matches {
+		width: 320px;
+		margin: 0px auto;
+		object-fit: contain;
+		background-color: #379683;
+		border: 3px solid black;
+		border-radius: 20px;
+	}
+	div.matchSchedule table.matches tr:nth-child(odd) {
+	}
+	div.matchSchedule table.matches tr:nth-child(even) {
+		background: #BC986A;
+	}
+	div.matchSchedule table.matches th {
+		border-radius: 22px 22px 0px 0px;
+	}
+	div.matchSchedule table.matches th, div.matchSchedule table.matches td {
+		color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	div.matchSchedule table.matches td.country {
+		width: 200px;
+		height: 15px;
+		border: 2px outset gray;
+	}
+	div.matchSchedule table.matches td.flag {
+		background-size: cover;
+		background-position: center center;
+		height: 90px;
+		padding: 0px;
+		border: 2px outset gray;
+	}
+	div.matchSchedule table.matches td.tickets {
+	}
+	div.matchSchedule table.matches td.tickets:active {
+		/*border: 4px outset white;*/
+	}
+	div.matchSchedule div.tab-section p {
+		margin: 0px 50px;
+		position: relative;
+		cursor: pointer;
+	}
+	div.matchSchedule div.tab-section p.tab-link::after{
+		content: '';
+		height: 3px;
+		background-color: lightblue;
+		position: absolute;
+		left: 0px;
+		bottom: -9px;
+		transition: 0.5s;
+	}
+	div.matchSchedule div.tab-section p.tab-link.active-link::after {
+		width: 100%;
+	}
+	div.matchSchedule div.tab-section {
+		display: flex;
+		width: fit-content;
+		margin: 40px auto 0px;
+	}
+	div.matchSchedule table.tab-section.smallScreen {
+		display:none;
+	}
+ 	div.matchSchedule div.tab-content {
+		display: none;
+	}
+	div.matchSchedule div.tab-content.active-week {
+		display: block;
+	}
+	div.matchSchedule div.tab-content.active-week h3 {
+		text-align: center;
+		font-size: 50px;
+		margin: 40px auto 10px;
+		padding: 5px 10px 5px;
+		text-decoration: underline;
+		font-weight: normal;
+		width: fit-content;
+		font-family: 'garamond', serif;
+	}
+	div.matchSchedule div.tab-content.active-week div.locationA {
+		padding: 0px 50px;
+		margin: 20px 0px 20px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 40px;
+	}
+	div.matchSchedule div.tab-content.active-week div.locationB {
+		padding: 0px 50px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 40px;
+	}
+}
+/* ---------------------------- Big Screen: End ---------------------------- */
+
+/* ---------------------------- Medium Screen: Start ---------------------------- */
+@media only screen and (max-width:1399px) {
+	div.matchSchedule {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.matchSchedule h1 {
+		margin: 20px auto 0px;
+		text-align: center;
+		font-size: 70px;
+		width: fit-content;
+		padding: 0px 30px;
+	}
+	div.matchSchedule p {
+		text-align: center;
+		font-size: 20px;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 0px 30px;
+	}
+	div.matchSchedule table.miniNav.smallScreen {
+		display: none;
+	}
+	div.matchSchedule table.miniNav {
+		width: fit-content;
+		margin: 0px auto;
+	}
+	div.matchSchedule table.miniNav th, div.matchSchedule table.miniNav td {
+		text-align: left;
+		padding: 10px;
+		background-color:rgb(230,230,230);
+		color: black;
+	}
+	div.matchSchedule table.matches {
+		width: 320px;
+		margin: 10px auto;
+		background-color: #379683;
+		border: 3px solid black;
+		border-radius: 20px;
+	}
+	div.matchSchedule table.matches tr:nth-child(odd) {
+	}
+	div.matchSchedule table.matches tr:nth-child(even) {
+		background-color: #BC986A;
+	}
+	div.matchSchedule table.matches th, div.matchSchedule table.matches td {
+		color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	div.matchSchedule table.matches td.country {
+		width: 200px;
+		height: 15px;
+		border: 2px outset gray;
+	}
+	div.matchSchedule table.matches td.flag {
+		background-size: cover;
+		background-position: center center;
+		height: 90px;
+		padding: 0px;
+		border: 2px outset gray;
+	}
+	div.matchSchedule table.matches td.tickets {
+	}
+	div.matchSchedule table.matches td.tickets:active {
+	}
+	div.matchSchedule div.tab-section p {
+		margin: 0px 50px;
+		position: relative;
+		cursor: pointer;
+		display: none;
+	}
+	div.matchSchedule div.tab-section p.tab-link::after{
+		content: '';
+		height: 3px;
+		background-color: lightblue;
+		position: absolute;
+		left: 0px;
+		bottom: -9px;
+		transition: 0.5s;
+	}
+	div.matchSchedule div.tab-section p.tab-link.active-link::after {
+		width: 100%;
+	}
+	div.matchSchedule div.tab-section {
+		display: flex;
+		width: fit-content;
+		margin: 40px auto 0px;
+	}
+	div.matchSchedule table.tab-section.smallScreen {
+		margin: 0px auto;
+		display: block;
+		width: fit-content;
+		border: 1px solid white;
+	}
+	div.matchSchedule table.tab-section.smallScreen th {
+		padding: 20px;
+		font-size: 40px;
+		border-bottom: 1px solid white;
+	}
+	div.matchSchedule table.tab-section.smallScreen td {		padding: 0px 15px 0px;
+		position: relative;
+		cursor: pointer;
+		font-size: 30px;
+		padding: 15px;
+	}
+	div.matchSchedule table.tab-section.smallScreen td.tab-link::after{
+		content: '';
+		height: 3px;
+		background-color: lightblue;
+		position: absolute;
+		left: 4px;
+		bottom: 5px;
+		transition: 0.5s;
+	}
+	div.matchSchedule table.tab-section.smallScreen td.tab-link.active-link::after {
+		width: 80%;
+	}
+	div.matchSchedule table.matches {
+		display: block;
+	}
+	div.matchSchedule div.tab-content.active-week div.saturday, div.matchSchedule div.tab-content.active-week div.sunday {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 0px;
+		padding: 0px;
+	}
+	div.matchSchedule div.tab-content.active-week div.saturday div.locationA, div.matchSchedule div.tab-content.active-week div.sunday div.locationA {
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+	}
+	div.matchSchedule div.tab-content.active-week div.saturday div.locationB, div.matchSchedule div.tab-content.active-week div.sunday div.locationB {
+		display: flex;
+		flex-direction: column;
+	}
+	div.matchSchedule div.tab-content {
+		display: none;
+	}
+	div.matchSchedule div.tab-content.active-week {
+		display: block;
+	}
+	div.matchSchedule div.tab-content.active-week h3 {
+		text-align: center;
+		font-size: 50px;
+		margin: 40px auto 10px;
+		padding: 5px 10px 5px;
+		text-decoration: underline;
+		font-weight: normal;
+		width: fit-content;
+		font-family: 'garamond', serif;
+	}
+	div.matchSchedule div.tab-content.active-week div.locationA {
+		padding: 0px 50px;
+		margin: 20px 0px 20px;
+	}
+	div.matchSchedule div.tab-content.active-week div.locationB {
+		padding: 0px 50px;
+	}
+}
+/* ---------------------------- Medium Screen: End ---------------------------- */
+
+/* ---------------------------- Small Screen: Start ---------------------------- */
+@media only screen and (max-width:1050px) {
+	div.matchSchedule {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 1px;
+	}
+	div.matchSchedule h1 {
+		margin: 20px auto 0px;
+		text-align: center;
+		font-size: 55px;
+		width: fit-content;
+		padding: 0px 30px;
+	}
+	div.matchSchedule p {
+		text-align: center;
+		font-size: 20px;
+		width: fit-content;
+		margin: 20px auto;
+		padding: 0px 30px;
+	}
+	div.matchSchedule table.miniNav.smallScreen {
+		margin: 0px auto;
+		padding: 0px 10px;
+		display: block;
+		width: fit-content;
+	}
+	div.matchSchedule table.miniNav.smallScreen th, div.matchSchedule table.miniNav.smallScreen td {
+		text-align: left;
+		padding: 5px;
+		background-color: rgb(230,230,230);
+		color: black;
+	}
+	div.matchSchedule table.miniNav {
+		margin: 0px auto;
+		display: none;
+	}
+	div.matchSchedule table.miniNav th, div.matchSchedule table.miniNav td {
+		text-align: left;
+		padding: 10px;
+		background-color: rgb(230,230,230);
+		color: black;
+	}
+	div.matchSchedule table.matches {
+		width: 300px;
+		margin: 10px auto;
+		padding: 0px;
+		background-color: #379683;
+		border: 3px solid black;
+		border-radius: 20px;
+	}
+	div.matchSchedule table.matches tr:nth-child(odd) {
+	}
+	div.matchSchedule table.matches tr:nth-child(even) {
+		background-color: #BC986A;
+	}
+	div.matchSchedule table.matches th, div.matchSchedule table.matches td {
+		color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	div.matchSchedule table.matches td.country {
+		width: 200px;
+		height: 15px;
+	}
+	div.matchSchedule table.matches td.flag {
+		background-size: cover;
+		background-position: center center;
+		height: 90px;
+		padding: 0px;
+	}
+	div.matchSchedule table.matches td.tickets {
+	}
+	div.matchSchedule table.matches td.tickets:active {
+	}
+	div.matchSchedule div.tab-section p {
+		margin: 0px 20px;
+		position: relative;
+		cursor: pointer;
+		display: none;
+	}
+	div.matchSchedule div.tab-section p.tab-link::after{
+		content: '';
+		height: 3px;
+		background-color: lightblue;
+		position: absolute;
+		left: 0px;
+		bottom: -9px;
+		transition: 0.5s;
+	}
+	div.matchSchedule div.tab-section p.tab-link.active-link::after {
+		width: 100%;
+	}
+	div.matchSchedule table.tab-section.smallScreen {
+		margin: 0px auto;
+		display: block;
+		width: fit-content;
+		border: 1px solid white;
+	}
+	div.matchSchedule table.tab-section.smallScreen th {
+		padding: 20px;
+		font-size: 40px;
+		border-bottom: 1px solid white;
+	}
+	div.matchSchedule table.tab-section.smallScreen td {		padding: 0px 15px 0px;
+		position: relative;
+		cursor: pointer;
+		font-size: 30px;
+		padding: 15px;
+	}
+	div.matchSchedule table.tab-section.smallScreen td.tab-link::after{
+		content: '';
+		height: 3px;
+		background-color: lightblue;
+		position: absolute;
+		left: 4px;
+		bottom: 5px;
+		transition: 0.5s;
+	}
+	div.matchSchedule table.tab-section.smallScreen td.tab-link.active-link::after {
+		width: 80%;
+	}
+	div.matchSchedule div.tab-section {
+		display: flex;
+		width: fit-content;
+		margin: 40px auto 0px;
+	}
+	div.matchSchedule div.tab-content {
+		display: none;
+	}
+	div.matchSchedule div.tab-content.active-week div.saturday, div.matchSchedule div.tab-content.active-week div.sunday {
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+	div.matchSchedule div.tab-content.active-week {
+		display: block;
+	}
+	div.matchSchedule div.tab-content.active-week h3 {
+		text-align: center;
+		font-size: 50px;
+		margin: 40px auto 10px;
+		padding: 5px 10px 5px;
+		text-decoration: underline;
+		font-weight: normal;
+		width: fit-content;
+		font-family: 'garamond', serif;
+	}
+	div.matchSchedule div.tab-content.active-week div.locationA {
+		padding: 0px 0px;
+		margin: 20px 0px 20px;
+	}
+	div.matchSchedule div.tab-content.active-week div.locationB {
+		padding: 0px 0px;
+	}
+}
+/* ---------------------------- Small Screen: End ---------------------------- */

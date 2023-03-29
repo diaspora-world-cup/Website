@@ -1,0 +1,353 @@
+* {
+	box-sizing: border-box;
+}
+
+/* ---------------------------- Big Screen: Start ---------------------------- */
+@media only screen and (min-width: 850px) {
+	div.sponsors {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.sponsors h1 {
+		width: fit-content;
+		margin: 20px auto;
+		font-size: 60px;
+	}
+	div.sponsors a {
+		width: fit-content;
+		display: block;
+		margin: 20px auto;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	div.sponsors i {
+		margin-right: 7px;
+		margin-left: 5px;
+		font-size: 23px;
+	}
+	div.sponsors p {
+		width: fit-content;
+		margin: 20px auto 20px;
+		padding: 0px 150px;
+		text-align: center;
+		font-size: 20px;
+	}
+	div.sponsors div.adPages {
+		width: fit-content;
+		margin: 5px auto;
+		border: 1px solid white;
+	}
+	div.sponsors div.adPages a {
+		display: inline-block;
+		width: fit-content;
+		margin: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	div.sponsors div.adPages a:hover {
+		display: inline-block;
+		width: fit-content;
+		margin: 20px;
+		text-decoration: none;
+		transform: translateY(-5px);
+		transition: 0.5s;
+		color: rgb(0,180,100);
+	}
+	div.sponsors div.adPages a:hover i {
+		width: fit-content;
+		text-decoration: none;
+		color: rgb(0,180,100);
+	}
+	div.sponsors form.big-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: block;
+	}
+	div.sponsors form.small-medium-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: none;
+	}
+	div.sponsors form.tiny-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: none;
+	}
+	div.sponsors form input {
+		width: fit-content;
+		margin: 0px auto;
+		border: 10px solid white;		
+		border-radius: 5px;
+		color: black;
+		font-size: 13px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form textarea {
+		border: 10px solid white;		
+		border-radius: 5px;
+		color: black;
+		font-size: 13px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form button {
+		color: black;
+		padding: 10px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form span#msgStatus-big-screen {
+		color: orange;
+		margin-left: 5px;
+		font-family: 'Times New Roman', sans-serif;
+		font-style: italic;
+	}
+}
+/* ---------------------------- Big Screen: End ---------------------------- */
+
+/* ---------------------------- Medium/Small Screen: Start ---------------------------- */
+@media only screen and (max-width:849px) {
+	div.sponsors {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.sponsors h1 {
+		width: fit-content;
+		margin: 20px auto;
+		font-size: 60px;
+	}
+	div.sponsors a {
+		width: fit-content;
+		display: block;
+		margin: 20px auto;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	div.sponsors i {
+		margin-right: 7px;
+		margin-left: 5px;
+		font-size: 23px;
+	}
+	div.sponsors p {
+		width: fit-content;
+		margin: 20px auto 20px;
+		padding: 0px 50px;
+		text-align: center;
+		font-size: 20px;
+	}
+	div.sponsors div.adPages {
+		width: fit-content;
+		margin: 5px auto;
+		border: 1px solid white;
+	}
+	div.sponsors div.adPages a {
+		display: inline-block;
+		width: fit-content;
+		margin: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	div.sponsors div.adPages a:active {
+		display: inline-block;
+		width: fit-content;
+		margin: 20px;
+		text-decoration: none;
+		transform: translateY(-5px);
+		transition: 0.5s;
+		color: rgb(0,180,100);
+	}
+	div.sponsors div.adPages a:active i {
+		width: fit-content;
+		text-decoration: none;
+		color: rgb(0,180,100);
+	}
+	div.sponsors form.big-screen {
+		font-family: 'Times New Roman', sans-serif;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: none;
+	}
+	div.sponsors form.small-medium-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: block;
+	}
+	div.sponsors form.tiny-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: none;
+	}
+	div.sponsors form input {
+		width: fit-content;
+		margin: 0px auto;
+		border: 10px solid white;		
+		border-radius: 5px;
+		color: black;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form textarea {
+		border: 10px solid white;		
+		border-radius: 5px;
+		color: black;
+		font-size: 13px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form button {
+		color: black;
+		padding: 10px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form span#msgStatus-small-medium-screen {
+		color: orange;
+		margin-left: 5px;
+		font-family: 'Times New Roman', sans-serif;
+		font-style: italic;
+	}
+}
+/* ---------------------------- Medium/Small Screen: End ---------------------------- */
+
+/* ---------------------------- Tiny Screen: Start ---------------------------- */
+@media only screen and (max-width:499px) {
+	div.sponsors {
+		background-color: #16132F;
+		width: 100vw;
+		font-family: 'Times New Roman', sans-serif;
+		padding: 1px 0px 20px;
+	}
+	div.sponsors h1 {
+		width: fit-content;
+		margin: 20px auto;
+		font-size: 60px;
+	}
+	div.sponsors a {
+		width: fit-content;
+		display: block;
+		margin: 20px auto;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	div.sponsors i {
+		margin-right: 7px;
+		margin-left: 5px;
+		font-size: 23px;
+	}
+	div.sponsors p {
+		width: fit-content;
+		margin: 20px auto 20px;
+		padding: 0px 50px;
+		text-align: center;
+		font-size: 20px;
+	}
+	div.sponsors div.adPages {
+		width: fit-content;
+		margin: 5px auto;
+		text-align: center;
+	}
+	div.sponsors div.adPages a {
+		display: block;
+		width: fit-content;
+		margin: 20px auto;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	div.sponsors div.adPages a:active {
+		display: inline-block;
+		width: fit-content;
+		margin: 20px;
+		text-decoration: none;
+		transform: translateY(-5px);
+		transition: 0.5s;
+		color: rgb(0,180,100);
+	}
+	div.sponsors div.adPages a:active i {
+		width: fit-content;
+		text-decoration: none;
+		color: rgb(0,180,100);
+	}
+	div.sponsors form.big-screen {
+		font-family: 'Times New Roman', sans-serif;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: none;
+	}
+	div.sponsors form.small-medium-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: none;
+	}
+	div.sponsors form.tiny-screen {
+		font-family: 'Times New Roman', sans-serif;
+		width: fit-content;
+		margin: 0px auto;
+		padding: 0px;
+		border: 1px solid white;
+		padding: 30px;
+		border-radius: 10px;
+		display: block;
+	}
+	div.sponsors form input {
+		width: fit-content;
+		margin: 0px auto;
+		border: 10px solid white;		
+		border-radius: 5px;
+		color: black;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form textarea {
+		border: 10px solid white;		
+		border-radius: 5px;
+		color: black;
+		font-size: 13px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form button {
+		color: black;
+		padding: 10px;
+		font-family: 'Times New Roman', sans-serif;
+	}
+	div.sponsors form span#msgStatus-small-medium-screen {
+		color: orange;
+		margin-left: 5px;
+		font-family: 'Times New Roman', sans-serif;
+		font-style: italic;
+	}
+}
+/* ---------------------------- Tiny Screen: End ---------------------------- */

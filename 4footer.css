@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+/* ---------------------------- Big Screen: Start ---------------------------- */
+@media only screen and (min-width:1100px) {
+	.footer {
+		font-family: 'Courrier New', monospace;
+		background-color: #16132F;;
+		color: white;
+		width: 100vw;
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap: 40px;
+		padding: 0px 20px;
+	}
+	.footer h2 {
+		font-size: 30px;
+		font-weight: normal;
+	}
+	.footer i {
+		font-size: 22px;
+	}
+	.footer .col1 {
+		text-align: center;
+		font-size: 18px;
+	}
+	.footer .col1 img {
+		width: 220px;
+		height: 100px;
+		border: 1px solid white;
+		border-radius: 5px;
+	}
+	.footer .col2 {
+		text-align: center;
+	}
+	.footer .col3 {
+		text-align: center;
+	}
+	.footer .col2 a, .footer .col3 a {
+		font-size: 18px;
+		text-decoration: none;
+		display: block;
+		width: fit-content;
+		margin: 0px auto 20px;
+		padding: 5px 5px;
+		transition: transform 0.5s, color 0.5s;
+		position: relative;
+		color: white;
+	}
+	.footer .col2 a::after, .footer .col3 a::after {
+		content: '';
+		width: 0px;
+		height: 3px;
+		background: white;
+		position: absolute;
+		left: 0px;
+		bottom: -6px;
+		transition: 0.32s;
+	}
+	.footer .col2 a:hover::after, .footer .col3 a:hover::after {
+		width: 100%;
+	}
+}
+/* ---------------------------- Big Screen: End ---------------------------- */
+
+/* ---------------------------- Medium Screen: Start ---------------------------- */
+@media only screen and (max-width:1099px) {
+	.footer {
+		width: 100vw;
+		background-color: #16132F;
+		font-family: 'Courrier-New', monospace;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		padding: 0px 20px;
+	}
+	.footer h2 {
+		font-size: 30px;
+		font-weight: normal;
+	}
+	.footer i {
+		font-size: 22px;
+	}
+	.footer .col1 {
+		width: 80vw;
+		text-align: center;
+		font-size: 18px;
+		border-radius: 5px;
+		margin: 15px;
+		background-color: #DEB887;
+		font-color: black;
+		margin: 20px auto;
+	}
+	.footer .col1 img {
+		width: 220px;
+		height: 100px;
+		border: 1px solid white;
+		border-radius: 5px;
+	}
+	.footer .col2 {
+		width: 80vw;
+		text-align: center;
+		border-radius: 5px;
+		margin: 15px;
+		background-color: #DEB887;
+		margin: 20px auto;
+	}
+	.footer .col3 {
+		width: 80vw;
+		text-align: center;
+		border-radius: 5px;
+		margin: 15px;
+		background-color: #DEB887;
+		margin: 20px auto;
+	}
+	.footer .col2 a, .footer .col3 a {
+		font-size: 18px;
+		text-decoration: none;
+		color: white;
+		display: block;
+		width: fit-content;
+		margin: 0px auto 20px;
+		padding: 5px 5px;
+		transition: transform 0.5s, color 0.5s;
+		position: relative;
+	}
+	.footer .col2 a::after, .footer .col3 a::after {
+		content: '';
+		width: 0px;
+		height: 3px;
+		background: white;
+		position: absolute;
+		left: 0px;
+		bottom: -6px;
+		transition: 0.32s;
+	}
+	.footer .col2 a:active::after, .footer .col3 a:active::after {
+		width: 100%;
+	}
+}
+/* ---------------------------- Medium Screen: End ---------------------------- */
+
+/* ---------------------------- Small Screen: Start ---------------------------- */
+/* ---------------------------- Small Screen: End ---------------------------- */

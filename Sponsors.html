@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> DWC: Sponsors </title>
+	<link href="1header.css" rel="stylesheet">
+	<link href="2-main-f-sponsors.css" rel="stylesheet">
+	<link href="3sales.css" rel="stylesheet">
+	<link href="4footer.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Ubuntu|Lora|Space+Mono" rel="stylesheet">
+	<script src="Script.js"></script>
+	<script src="https://kit.fontawesome.com/bc7d7ef26c.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!-- ------------------------------------------- Header: Start ------------------------------------------- -->
+	<div class="header">
+
+		<!-- Navigation: Start -->
+		<nav class="bigScreen">
+			<a href="index.html#aboutUs"> <img src="Media/DWCLogo.jpeg"> </a>
+			<ul>
+				<a href="index.html#aboutUs" class="main-nav-link"> <li> About Us </li> </a>
+				<div class="dropdown-section">
+					<a>
+						Tournament
+						<i class="fa-solid fa-square-caret-down closeDrop"></i>
+						<i class="fa-regular fa-square-caret-down openDrop"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="TeamStandings.html#teamStandings"> <li> Team Standings </li> </a>
+						<a href="MatchSchedule.html#matchSchedule"> <li> Match Schedule </li> </a>
+					</div>
+				</div>
+				<div class="dropdown-section">
+					<a>
+						Join In
+						<i class="fa-solid fa-square-caret-down closeDrop"></i>
+						<i class="fa-regular fa-square-caret-down openDrop"></i>
+					</a>	
+					<div class="dropdown-content">
+						<a href="SoccerPlayers.html#soccerPlayers"> <li> Soccer Players </li> </a>
+						<a href="Tickets.html#tickets"> <li> Tickets </li> </a>
+						<a href="Sponsors.html#sponsors"> <li> Sponsors </li> </a>
+					</div>
+				</div>
+				<a href="FAQ.html#FAQ" class="main-nav-link"> <li> FAQ </li> </a>
+				<a href="ContactUs.html#contactUs" class="main-nav-link"> <li> Contact Us </li> </a>
+			</ul>
+		</nav>
+		<!-- Navigation: End -->
+
+		<!-- Small and Medium Screen: Start -->
+		<nav class="smallScreen mediumScreen">
+			<a href="index.html#aboutUs"> <img src="Media/DWCLogo.jpeg"> </a>
+			<i id="barIcon" class="fa-solid fa-bars" onclick="openMenu()"></i>
+			<ul id="sideMenu"> 
+				<i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+				
+				<a href="index.html#aboutUs"> <li class="green-odd"> About Us </li> </a>
+
+				<hr>
+				<li class="green-even"> TOURNAMENT <i class="fa-solid fa-caret-down"></i> </li>
+				<a href="TeamStandings.html#teamStandings"> <li class="green-odd"> Team Standings </li> </a>
+				<a href="MatchSchedule.html#matchSchedule"> <li class="green-even"> Match Schedule </li> </a>
+
+				<hr>
+				<li class="green-even"> JOIN IN <i class="fa-solid fa-caret-down"></i> </li>
+				<a href="SoccerPlayers.html#soccerPlayers"> <li class="green-odd"> Soccer Players </li> </a>
+				<a href="Tickets.html#tickets"> <li class="green-even">  Tickets </li> </a>
+				<a href="Sponsors.html#sponsors"> <li class="green-odd">  Sponsors</li> </a> 
+
+				<hr>
+				<a href="FAQ.html#FAQ"> <li class="green-even"> FAQ </li> </a>
+				<a href="ContactUs.html#contactUs"> <li class="green-odd"> Contact Us </li> </a>
+			</ul>
+		</nav>
+		<!-- Small and Medium Screen: End -->
+
+		<!-- Header Text: Start -->
+		<div class="headerText">
+			<p> <span>DIASPORA WORLD CUP</span> <br><br> International Soccer Tournament <br><br> Ottawa, Canada </p>  
+		</div>
+		<!-- Header Text: End -->
+
+	</div>
+	<!-- ------------------------------------------- Header: End ------------------------------------------- -->
+
+	<!-- ------------------------------------------- Main - Sponsors: Start ------------------------------------------- -->
+	<div class="sponsors">
+
+		<h1 id="sponsors"> SPONSORS </h1>
+	
+		<a> <i class="fa-solid fa-paper-plane"></i> info@diaspora-world-cup.com </a>
+	
+		<p> 
+			Advertise your products or services at our facilities. <br>
+			DWC can place your brand on our soccer teams' shirts, rent spaces for small billboards at our events, and more ... 
+		</p>
+
+		<form action="https://formsubmit.co/info@diaspora-world-cup.com" onsubmit="return matchCheck1()" method="POST" name="contact-form-big-screen" class="big-screen">
+			<input size="25" type="text" name="businessName" placeholder="Business Name" required> </input>
+			<br> <br> <input size="25" type="email" name="inquirerEmail-big-screen" placeholder="Enter Email Address" required> </input>
+			<br> <br> <input size="25" type="email" name="inquirerEmailCheck-big-screen" placeholder="Confirm Email Address" oninput="matchCheck1()" required> </input>
+			<br> <br> <textarea rows="10" cols="100" name="Inquiry" placeholder="Message"></textarea>
+			<br> <br> <button type="submit"> Send </button>
+			<span id="msgStatus-big-screen"></span>
+		</form>
+
+		<form action="https://formsubmit.co/info@diaspora-world-cup.com" onsubmit="return matchCheck2()" method="POST" name="contact-form-small-medium-screen" class="small-medium-screen">
+			<input size="25" type="text" name="inquirerName" placeholder="Name" required> </input>
+			<br> <br> <input size="25" type="email" name="inquirerEmail-small-medium-screen" placeholder="Enter Email Address" required> </input>
+			<br> <br> <input size="25" type="email" name="inquirerEmailCheck-small-medium-screen" placeholder="Confirm Email Address" oninput="matchCheck2()" required> </input>
+			<br> <br> <textarea rows="10" cols="50" name="Inquiry" placeholder="Message"></textarea>
+			<br> <br> <button type="submit"> Send </button>
+			<span id="msgStatus-small-medium-screen"></span>
+		</form>
+
+		<form action="https://formsubmit.co/info@diaspora-world-cup.com" onsubmit="return matchCheck3()" method="POST" name="contact-form-tiny-screen" class="tiny-screen">
+			<input size="25" type="text" name="inquirerName" placeholder="Name" required> </input>
+			<br> <br> <input size="25" type="email" name="inquirerEmail-tiny-screen" placeholder="Enter Email Address" required> </input>
+			<br> <br> <input size="25" type="email" name="inquirerEmailCheck-tiny-screen" placeholder="Confirm Email Address" oninput="matchCheck3()" required> </input>
+			<br> <br> <textarea rows="10" cols="25" name="Inquiry" placeholder="Message"></textarea>
+			<br> <br> <button type="submit"> Send </button>
+			<span id="msgStatus-tiny-screen"></span>
+		</form>
+	
+	</div>
+	<!-- ------------------------------------------- Main - Sponsors: End ------------------------------------------- -->
+
+	<!-- ------------------------------------------- Sales: Start ------------------------------------------- -->
+	<div class="sales">
+
+		<!-- List of Services: Start -->
+		<div class="listOfServices">
+
+			<div class="serviceItem">
+				<img src="Media/salesSignUp.jpg">
+				<div class="layer">
+					<h4> Soccer Players </h4>
+					<p> Represent your country of origin! </p>
+					<a href="SoccerPlayers.html#soccerPlayers"> Sign Up </a> 
+				</div>
+			</div>
+
+			<div class="serviceItem">
+				<img src="Media/salesTickets.jpg">
+				<div class="layer">
+					<h4> Fans </h4>
+					<p> Support your favourite team! </p>
+					<a href="Tickets.html#tickets"> Tickets </a> 
+				</div>
+			</div>
+
+			<div class="serviceItem">
+				<img src="Media/salesAdvertise.jpg">
+				<div class="layer">
+					<h4> Businesses </h4>
+					<p> Market your products and services! </p>
+					<a href="Sponsors.html#sponsors"> Advertise </a>
+				</div>
+			</div>
+
+		</div>
+		<!-- List of Services: End -->
+
+	</div>
+	<!-- ------------------------------------------- Sales: End ------------------------------------------- -->
+
+	<!-- ------------------------------------------- Footer: Start ------------------------------------------- -->
+	<div class="footer">
+
+		<div class="col1">
+			<h2> DIASPORA WORLD CUP </h2>
+			<img src="Media/DWCLogo.jpeg">
+			<p> <i class="fa-solid fa-paper-plane"></i> info@diaspora-world-cup.com </p>
+		</div>
+
+		<div class="col2">
+			<h2> FOLLOW US </h2>
+			<a href="https://www.facebook.com/profile.php?id=100090724760168" target="_blank"> Facebook <i class="fa-brands fa-facebook-f"></i> </a>
+			<a href="https://www.instagram.com/diaspora_world_cup/" target="_blank"> Instagram <i class="fa-brands fa-instagram"></i> </a>
+			<a href="https://www.youtube.com/@diaspora_world_cup" target="_blank"> YouTube <i class="fa-brands fa-youtube"></i> </a>
+		</div>
+
+		<div class="col3">
+			<h2> JOIN IN </h2>
+			<a href="SoccerPlayers.html#soccerPlayers"> Soccer Players <i class="fa-solid fa-futbol"></i> </a>
+			<a href="Tickets.html#tickets"> Tickets <i class="fa-solid fa-ticket"></i> </a>
+			<a href="Sponsors.html#sponsors"> Sponsors <i class="fa-solid fa-rectangle-ad"></i> </a>
+		</div>
+
+	</div>
+	<!-- ------------------------------------------- Footer: End ------------------------------------------- -->
+</body>
+
+</html>
